@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="css/sidebar.css" />
-  <link rel="stylesheet" href="css/issues.css">
 
   <!-- js links -->
 
@@ -58,30 +57,36 @@
         </form>
       </div>
     </nav>
-
     <main>
       <div class="main__container">
-        <form action="action_page.php">
-
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-          <input type="submit" value="Submit">
-
-        </form>
+        <h2>Courses in current Semester</h2>
+        <br><br>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card" style="width: 24rem;">
+              <div class="card-header">
+                Non - Electives
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card" style="width: 24rem;">
+              <div class="card-header">
+                Electives
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -94,7 +99,7 @@
       </div>
 
       <div class="sidebar__menu">
-        <div class="sidebar__link">
+        <div class="sidebar__link active_menu_link">
           <a href="homepage.html">Dashboard</a>
         </div>
         <div class="sidebar__link">
@@ -110,7 +115,7 @@
           <a href="#">Library</a>
         </div>
         <div class="sidebar__link">
-          <a href="courses.html">Courses Enrolled</a>
+          <a href="#">Courses Enrolled</a>
         </div>
         <div class="sidebar__link">
           <a href="#">Hostel & Mess</a>
@@ -133,7 +138,7 @@
         <div class="sidebar__link">
           <a href="#">Acheivements & Awards</a>
         </div>
-        <div class="sidebar__link active_menu_link">
+        <div class="sidebar__link">
           <a href="issues.html">Issues & Complaints</a>
         </div>
         <div class="sidebar__link">
